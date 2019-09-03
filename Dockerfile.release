@@ -11,10 +11,10 @@ ENV DOMAIN_ENV=pd
 ENV CI=true
 
 # Required for linux sass binary
-RUN cd /wsdev/authnet-app && yarn run prebuild
+RUN cd /wsdev/authnet-app && yarn prebuild
 
 # Create optimized build
-RUN cd /wsdev/authnet-app && yarn run build
+# RUN cd /wsdev/authnet-app && yarn build
 
 # Expose the port so host can have access
 EXPOSE 80
