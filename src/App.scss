@@ -1,0 +1,115 @@
+.App {
+	text-align: left;
+	margin: 0 auto;
+	color: black;
+	height: 100%;
+	background-color: transparent;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ff8200;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btn-openid {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.authnet-card {
+	min-height: 186px !important;
+	padding-top: 6px !important;
+}
+
+.authnet-card__header {
+	min-height: 120px !important;
+}
+
+.authnet-card-body__form {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+ul {
+	margin-top: 0 !important;
+}
+
+.MuiTypography-root {
+	width: 100%;
+	padding-left: 24px;
+	text-align: left;
+}
+
+.MuiIconButton-colorSecondary:hover {
+	background-color: rgba(245, 0, 87, 0.2) !important;
+}
+
+i.fab.fa-openid, i.fas.fa-cog.fa-spin {
+	font-size: 2em !important;
+}
+
+.link__goto-login {
+	font-size: 1.25em !important;
+	display: flow-root;
+	text-align: center;
+	padding-top: 0.25em;
+}
+
+.link__goto-login:hover {
+	color: orange !important;
+}
+
+.openid__card-body-title {
+	text-align: center !important;
+}
+
+
+
+.jotform-form {
+	padding: 12px 0 !important;
+}
+
+.claim-answer {
+	margin-top: 8px;
+	margin-bottom: 4px;
+	font-size: 12px !important;
+}
+
+.claim-answer__purple {
+	background-color: #EDE2FE;
+	padding: 2px;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.claim-answer__blue {
+	background-color: #D0F0FE;
+	padding: 2px;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.claim-answer__transparent {
+	padding: 2px;
+	font-weight: bold;
+}
+
+.claim-answer__evidence-img {
+	width: 96px;
+}

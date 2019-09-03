@@ -1,0 +1,34 @@
+/*!
+
+=========================================================
+* Material Dashboard PRO React - v1.7.0 Based on Material Dashboard PRO v1.3.0
+=========================================================
+
+* Product Page: https://www.webshield.io/product/material-dashboard-pro-react
+* Copyright 2019 WebShield (https://www.webshield.io)
+
+* Coded by WebShield
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+
+// variables and mixins
+@import "material-dashboard-pro-react/variables";
+@import "material-dashboard-pro-react/mixins";
+@import "material-dashboard-pro-react/shadows";
+
+// plugin css
+@import "material-dashboard-pro-react/plugins/plugin-nouislider";
+@import "material-dashboard-pro-react/plugins/plugin-perfect-scrollbar";
+@import "material-dashboard-pro-react/plugins/plugin-react-bootstrap-sweetalert";
+@import "material-dashboard-pro-react/plugins/plugin-react-big-calendar";
+@import "material-dashboard-pro-react/plugins/plugin-react-tagsinput";
+
+// Core CSS
+@import "material-dashboard-pro-react/misc";
+@import "material-dashboard-pro-react/fileupload";
+@import "material-dashboard-pro-react/fixed-plugin";

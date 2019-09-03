@@ -1,0 +1,113 @@
+[
+  {
+    "name": "issuer_is_subject",
+    "order": 2,
+    "text": "Issuer is Subject",
+    "type": "control_checkbox",
+    "answer": [
+      "False"
+    ],
+    "prettyFormat": "False"
+  },
+  {
+    "name": "issuer_name",
+    "order": 4,
+    "sublabels": "{\"prefix\":\"Prefix\",\"first\":\"First Name\",\"middle\":\"Middle Name\",\"last\":\"Last Name\",\"suffix\":\"Suffix\"}",
+    "text": "Issuer Name",
+    "type": "control_fullname",
+    "answer": {
+      "first": "Steven",
+      "middle": "Flavio",
+      "last": "Espinoza"
+    },
+    "prettyFormat": "Steven Flavio Espinoza"
+  },
+  {
+    "name": "issuer_email",
+    "order": 5,
+    "text": "Issuer Email",
+    "type": "control_email",
+    "answer": "flavio.espinoza@gmail.com"
+  },
+  {
+    "name": "subject_name",
+    "order": 7,
+    "sublabels": "{\"prefix\":\"Prefix\",\"first\":\"First Name\",\"middle\":\"Middle Name\",\"last\":\"Last Name\",\"suffix\":\"Suffix\"}",
+    "text": "Subject Name",
+    "type": "control_fullname",
+    "answer": {
+      "first": "Nikki",
+      "middle": "",
+      "last": "Vasquez"
+    },
+    "prettyFormat": "Nikki Vasquez"
+  },
+  {
+    "name": "subject_email",
+    "order": 8,
+    "text": "Subject Email",
+    "type": "control_email",
+    "answer": "nikki.vasquez8@gmail.com"
+  },
+  {
+    "name": "claim_type",
+    "order": 17,
+    "text": "Select Claim Type",
+    "type": "control_radio",
+    "answer": "Person Property Value"
+  },
+  {
+    "name": "age_over",
+    "order": 20,
+    "text": "I certify {subject_name} is over the age of",
+    "type": "control_radio",
+    "answer": "21 years"
+  },
+  {
+    "name": "proofing_annotation",
+    "order": 22,
+    "text": "What is the basis of your claim regarding {subject_name}'s age?",
+    "type": "control_radio",
+    "answer": "I verified their identity based on their Driver’s License or government-issued picture ID."
+  },
+  {
+    "name": "uploadDocuments245",
+    "order": 62,
+    "text": "Upload documents to support you claim",
+    "type": "control_fileupload",
+    "answer": [
+      "https://www.jotform.com/uploads/flavio.espinoza/92314299790163/4421927728634694985/drivers-licence-1.jpg"
+    ],
+    "prettyFormat": "<a href=\"https://www.jotform.com/uploads/flavio.espinoza/92314299790163/4421927728634694985/drivers-licence-1.jpg\" target=\"_blank\" title=\"drivers-licence-1.jpg\">drivers-licence-1.jpg</a>"
+  },
+  {
+    "name": "statement_of_truth",
+    "order": 64,
+    "text": "Statement of Truth",
+    "type": "control_checkbox",
+    "answer": [
+      "I attest that the information I have provided is true and accurate to the best of my knowledge"
+    ],
+    "prettyFormat": "I attest that the information I have provided is true and accurate to the best of my knowledge"
+  },
+  {
+    "name": "consent_regarding_personal_data",
+    "order": 65,
+    "text": "Consent Regarding My Personal Data",
+    "type": "control_checkbox",
+    "answer": [
+      "I give my consent to the management and processing of my personal data by the Authorization Network."
+    ],
+    "prettyFormat": "I give my consent to the management and processing of my personal data by the Authorization Network."
+  },
+  {
+    "name": "terms_and_conditions",
+    "order": 66,
+    "text": "Terms and Conditions",
+    "type": "control_checkbox",
+    "answer": [
+      "I agree to the terms and conditions of the Authorization Network."
+    ],
+    "prettyFormat": "I agree to the terms and conditions of the Authorization Network."
+  }
+]
