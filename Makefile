@@ -7,19 +7,16 @@ build:
 
 build-docker:
 	@echo "***** Docker Build & Push Image: " ${IMG} "*****"
-	
-	yarn run docker:prep
-	yarn run docker:build
+	yarn docker:prep
+	yarn docker:build
 
 build-drone:
-	yarn run docker:prep
+	yarn docker:prep
 
 test:
 	@echo "** Testing **"
 	yarn install
-	yarn run test
+	yarn test
 
 lint:
 	@echo "** Linting **"
-	yarn install
-	yarn run tslint
