@@ -1,23 +1,20 @@
 # Base image
 FROM node:10.16.3-alpine
 
-COPY ./ 	/wsdev/authnet-app/
+# Node env
+ARG NODE_ENV=production
+ENV NODE_ENV=$NODE_ENV
 
-WORKDIR /wsdev/authnet-app
+# Deployment working directory
+WORKDIR /wsdev/app
+
+# Copy the app in (node_modules must be already installed)
+COPY ./  	/wsdev/app/
 
 # Required for linux sass binary
-RUN cd /wsdev/authnet-app && yarn run prebuild
+RUN cd /wsdev/app && yarn run prebuild
 
-# Create optimized build
-RUN cd /wsdev/authnet-app && yarn run build
-
-# Node ENV production
-ENV NODE_ENV=production
-
-# Domain ENV is a privacy domain
-ENV DOMAIN_ENV=pd
-
-# Expose the port so host can have access
-EXPOSE 80
+# Expose internal port
+EXPOSE 3030
 
 CMD [ "yarn", "start-prod" ]

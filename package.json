@@ -8,12 +8,12 @@
     "test": "test"
   },
   "scripts": {
+		"test": "NODE_ENV=test mocha -r esm test/*.test.js",
     "start": "react-scripts start",
     "server": "nodemon ./server/index.js",
-    "build": "CI=true NODE_PATH=src react-scripts build",
-    "prebuild": "rebuild-node-sass",
-    "test": "NODE_ENV=test mocha -r esm test/*.test.js",
-    "eject": "react-scripts eject",
+		"prebuild": "rebuild-node-sass",
+    "build": "yarn run clean && CI=true NODE_PATH=src NODE_ENV=production react-scripts build",
+		"clean": "rm -rf ./build",
     "start-dev": "nf --procfile Procfile --port 8080 start",
     "start-prod": "nf start",
     "poststart": "yarn run prod",
